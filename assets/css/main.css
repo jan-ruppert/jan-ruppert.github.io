@@ -2702,6 +2702,100 @@ input, select, textarea {
 			padding-top: 0;
 		}
 
+/* YFeature */
+
+.yfeature {
+	position: relative;
+	height: 20em;
+}
+
+	.yfeature:after {
+		clear: both;
+		content: '';
+		display: block;
+	}
+
+	.yfeature h3, .yfeature h4, .yfeature h5, .yfeature h6 {
+		text-align: inherit;
+	}
+
+	.yfeature .image {
+		display: inline-block;
+		height: 80%;
+		overflow: hidden;
+		position: relative;
+		width: 50%;
+	}
+
+		.yfeature .image img {
+			display: block;
+			min-height: 100%;
+			min-width: 100%;
+			position: absolute;
+		}
+
+	.yfeature:before {
+		background: blue;
+		content: '';
+		display: inline-block;
+		height: 100%;
+		vertical-align: top;
+	}
+
+	.yfeature .content {
+		display: inline-block;
+		padding: 3.5em;
+		vertical-align: middle;
+		width: 48%;
+	}
+
+		.yfeature .content h3 {
+			margin-bottom: 0.5em;
+		}
+
+		.yfeature .content :last-child {
+			margin: 0;
+		}
+
+	.yfeature.left {
+		text-align: left;
+	}
+
+		.yfeature.left .image {
+			float: left;
+		}
+
+			.yfeature.left .image img {
+				right: 0;
+				top: 0;
+			}
+
+		.yfeature.left .content {
+			padding-right: 0;
+		}
+
+	.yfeature.right {
+		text-align: right;
+	}
+
+		.yfeature.right .image {
+			float: right;
+		}
+
+			.yfeature.right .image img {
+				left: 0;
+				top: 0;
+			}
+
+		.yfeature.right .content {
+			padding-left: 0;
+		}
+
+	.yfeature.long .content {
+		padding-top: 0;
+	}
+
+
 /* Header */
 
 	#header {
